@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import SidePiece
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: SidePieceController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let mainButton = UIButton(frame: CGRect(x: 20, y: 20, width: 50, height: 50))
+        mainButton.backgroundColor = UIColor.red
+        mainButton.addTarget(self, action: #selector(buttonPressed(sender:forEvent:)), for: .touchUpInside)
+        
+        let sideButton = UIButton(frame: CGRect(x: 20, y: 20, width: 50, height: 50))
+        sideButton.backgroundColor = UIColor.blue
+        sideButton.addTarget(self, action: #selector(buttonPressed(sender:forEvent:)), for: .touchUpInside)
+        
+        sideView.backgroundColor = UIColor.green
+        
+        view.addSubview(mainButton)
+        sideView.addSubview(sideButton)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    internal func buttonPressed(sender: UIButton, forEvent event: UIEvent) {
+        toggleSideView()
     }
-
-
 }
-

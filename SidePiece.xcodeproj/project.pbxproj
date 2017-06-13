@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BA0B6BC51EEF0917005928E7 /* SidePiece.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0B6BC31EEF0917005928E7 /* SidePiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA0B6C051EEF0BCE005928E7 /* SidePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6C041EEF0BCE005928E7 /* SidePiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA0B6BC01EEF0917005928E7 /* SidePiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SidePiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0B6BC31EEF0917005928E7 /* SidePiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidePiece.h; sourceTree = "<group>"; };
 		BA0B6BC41EEF0917005928E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0B6C041EEF0BCE005928E7 /* SidePiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePiece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				BA0B6BC31EEF0917005928E7 /* SidePiece.h */,
+				BA0B6C041EEF0BCE005928E7 /* SidePiece.swift */,
 				BA0B6BC41EEF0917005928E7 /* Info.plist */,
 			);
 			path = SidePiece;
@@ -96,6 +99,7 @@
 					BA0B6BBF1EEF0917005928E7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Y8S79T498T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0B6C051EEF0BCE005928E7 /* SidePiece.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		BA0B6BC91EEF0917005928E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y8S79T498T;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ZA.SidePiece;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		BA0B6BCA1EEF0917005928E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y8S79T498T;
