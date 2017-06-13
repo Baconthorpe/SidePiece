@@ -96,7 +96,7 @@ open class SidePieceController : UIViewController {
         }
     }
     
-    @objc fileprivate func shadeViewTapped(sender: UIButton, forEvent event: UIEvent) {
+    @objc private func shadeViewTapped(sender: UIButton, forEvent event: UIEvent) {
         toggleSideView()
     }
 }
