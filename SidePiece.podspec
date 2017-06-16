@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'SidePiece is a simple iOS framework for displaying an animated menu appearing from the side of the screen.'
 
   s.description      = <<-DESC
-SidePiece is a simple iOS framework for displaying an animated menu appearing from the side of the screen.
+SidePiece is a simple iOS framework for displaying an animated menu appearing from the side of the screen, originally written by Zeke Abuhoff.
                        DESC
 
   s.homepage         = 'https://github.com/Baconthorpe/SidePiece'
